@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p = "http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ <bean class = "com.Archana.SpringcoreDI.Collection.Employee" name = "empobj1">
+  <property name="employname" value="Archana"></property>
+  <property name="phones">
+  		<list>
+  		     <value>9569565965</value>
+  		     <value>832323232</value>
+  		     <value>7956923232</value>
+  		</list>
+  </property>
+  
+  <property name="addresses">
+  		<set>
+  		<value>Nagpur</value>
+  		<value>Kanpur</value>
+  		<value>Solapur</value>
+  		</set>
+  </property>
+  <property name="courses">
+  		<map>
+  		     <entry key="java" value="2 months" />
+  		      <entry key="python" value="3 months" />
+  		       <entry key="go" value="1.5 months" />
+  		</map>
+  </property>
+ </bean>
+ </beans>

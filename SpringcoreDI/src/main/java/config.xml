@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" 
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+ xmlns:p = "http://www.springframework.org/schema/p"
+ xsi:schemaLocation="http://www.springframework.org/schema/beans
+ http://www.springframework.org/schema/beans/spring-beans.xsd">
+ 
+ 
+ <bean class = "com.Archana.SpringcoreDI.Student" name = "studobj1">
+ <!-- using property as element to set property-->
+ <!-- 	<property name="Name"><value>Archana</value></property>
+ 	<property name="address"><value>Bajeria</value></property>
+ 	<property name="id"><value>333</value></property> -->
+ 	
+ 	<property name="Name" value="Apurva"></property>
+ 	<property name="address" value="Pune" />
+ 	<property name="id" value="444" />
+ 
+ </bean>
+ 
+  <!-- using property as value attribute to set property-->
+ <bean class = "com.Archana.SpringcoreDI.Student" name = "studobj2">
+ 	
+ 	<property name="Name" value="Archana"></property>
+ 	<property name="address" value="Bajeria" />
+ 	<property name="id" value="333" />
+ 
+ </bean>
+ <!-- using p schema  best method to set property-->
+  <bean class = "com.Archana.SpringcoreDI.Student" name = "studobj3" p:Name= "Rahul" p:address= "Kanpur" p:id = "88888"/>
+  
+   <bean class = "com.Archana.SpringcoreDI.Student" name = "studobj4" p:Name= "Vaidik" p:address= "Bajeria" p:id = "9999"/>
+ </beans> 
